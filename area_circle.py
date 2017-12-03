@@ -1,6 +1,6 @@
 
 
-# 2. A Program to find the area of a circle
+# 2) A Program to find the area of a circle
 
 from math import pi
 
