@@ -1,15 +1,22 @@
-def LHS(a,b):
-    return(a+b)**2
+#Prove tha (a + b)^2 = a^2 + 2*a*b + b^2
+from math import *
 
-def RHS(a,b):
-    return a**2+2*a*b+b**2
+a = input("enter value of a :")
+a = int(a)
+b = input("enter value of b :")
+b = int(b)
 
 
-num1=int(input("Enter the value of a:"))
-num2=int(input("Enter the value of b :"))
+def lhs(a, b):
+    return (a + b) ** 2
 
-L=LHS(num1,num2)
-R=RHS(num1,num2)
 
-print("{}={}".format(L,R))
-print("Hence its proved")
+def rhs(a, b):
+    return a ** 2 + 2 * a * b + b ** 2
+
+
+c = lhs(a, b)
+d = rhs(a, b)
+
+if c == d:
+    print("since LHS = {0} and RHS = {1} So the given expression is correct".format(c,d))
